@@ -25,43 +25,53 @@ body{
     width: 800px;
     margin: 0 auto;
     padding: 30px 0;
-  }
 
-  .card-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-
-    .card{
-      width: calc((100% / 2) - 10px);
-      border-radius: 20px;
-      padding: 10px;
-      background-color: rgb(87, 87, 87);
-      color: rgb(252, 231, 204);
-      transition: 600ms ease-in-out;
-      
-      .title{
-        color: rgb(247, 198, 133);
+    .main-title{
+      text-align: center;
+      margin-bottom: 10px;
+      padding-bottom: 30px;
+      color: rgb(247, 182, 97);
+      border-bottom: 3px solid rgb(247, 198, 133);
+      border-radius: 30px;
+      text-shadow: 5px 5px 4px black;
+    }
+    .card-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+  
+      .card{
+        width: calc((100% / 2) - 10px);
+        border-bottom: 3px solid rgb(247, 198, 133);
+        border-radius: 20px;
+        padding: 10px;
+        background-color: rgb(87, 87, 87);
+        color: rgb(252, 231, 204);
+        transition: 600ms ease-in-out;
+        
+        .title{
+          color: rgb(247, 198, 133);
+        }
+        
+        .original-title{
+          font-style: italic;
+          color: rgb(247, 198, 133);
+        }
+  
+        &:hover .title, &:hover .original-title{
+          color: rgb(56, 56, 56);
+        }
+        
+        &:hover{
+          border-bottom: 3px solid rgb(255, 161, 37);
+          box-shadow: inset 20px 20px 30px rgba(245, 207, 101, 0.8);
+          color: rgb(56, 56, 56);
+          background-color: rgb(255, 206, 133);
+          transform: skew(-5deg) scale(1.3) rotateX(360deg);
+        }     
       }
-      
-      .original-title{
-        font-style: italic;
-        color: rgb(247, 198, 133);
-      }
-
-      &:hover .title, &:hover .original-title{
-        color: rgb(56, 56, 56);
-      }
-      
-      &:hover{
-        box-shadow: 10px 20px 5px #011c2e;
-        box-shadow: inset 20px 20px 30px rgba(245, 207, 101, 0.8);
-        color: rgb(56, 56, 56);
-        background-color: rgb(255, 206, 133);
-        transform: skew(-5deg) scale(1.3) rotateX(360deg);
-      }     
     }
   }
 }

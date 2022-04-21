@@ -11,6 +11,7 @@
 <body>
   <div class="container-fluid">
     <div class="container">
+      <h1 class="main-title">Film Consigliati</h1>
       <div class="card-wrapper">
         @foreach($movies as $movie)
           <div class="card">

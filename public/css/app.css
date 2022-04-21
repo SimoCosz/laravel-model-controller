@@ -29,7 +29,17 @@ body {
   padding: 30px 0;
 }
 
-.container-fluid .card-wrapper {
+.container-fluid .container .main-title {
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  color: rgb(247, 182, 97);
+  border-bottom: 3px solid rgb(247, 198, 133);
+  border-radius: 30px;
+  text-shadow: 5px 5px 4px black;
+}
+
+.container-fluid .container .card-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,8 +47,9 @@ body {
   flex-wrap: wrap;
 }
 
-.container-fluid .card-wrapper .card {
+.container-fluid .container .card-wrapper .card {
   width: calc(50% - 10px);
+  border-bottom: 3px solid rgb(247, 198, 133);
   border-radius: 20px;
   padding: 10px;
   background-color: rgb(87, 87, 87);
@@ -46,22 +57,22 @@ body {
   transition: 600ms ease-in-out;
 }
 
-.container-fluid .card-wrapper .card .title {
+.container-fluid .container .card-wrapper .card .title {
   color: rgb(247, 198, 133);
 }
 
-.container-fluid .card-wrapper .card .original-title {
+.container-fluid .container .card-wrapper .card .original-title {
   font-style: italic;
   color: rgb(247, 198, 133);
 }
 
-.container-fluid .card-wrapper .card:hover .title,
-.container-fluid .card-wrapper .card:hover .original-title {
+.container-fluid .container .card-wrapper .card:hover .title,
+.container-fluid .container .card-wrapper .card:hover .original-title {
   color: rgb(56, 56, 56);
 }
 
-.container-fluid .card-wrapper .card:hover {
-  box-shadow: 10px 20px 5px #011c2e;
+.container-fluid .container .card-wrapper .card:hover {
+  border-bottom: 3px solid rgb(255, 161, 37);
   box-shadow: inset 20px 20px 30px rgba(245, 207, 101, 0.8);
   color: rgb(56, 56, 56);
   background-color: rgb(255, 206, 133);
